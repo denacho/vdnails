@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff9f5;
+}
+
+.landing-page {
+  font-family: 'Playlist Script', cursive;
+  background: url(./components/pages/screen.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.height-90 {
+  min-height: 90vh;
+}
+
+
+.main-btn {
+  color: blue;
+  font-size: 3rem;
+  border: 2px solid skyblue;
+  transition: all 1s ease-out;
+  animation: fromLeft;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: skyblue;
+  border-radius: 10px;
+  animation: fromTop;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+@keyframes fromTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  background-color: #ffdc7c;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.landing-page {
+  font-family: 'Mr Dafoe', cursive;
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.height-90 {
+  min-height: 80vh;
+}
+.banner h1 {
+  border-top: 6px dotted skyblue;
+  border-bottom: 6px dotted skyblue;
+  animation: fromRight;
+  animation-duration: 7s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+}
+.main-btn {
+  color: #9b8884;
+  font-size: 3rem;
+  border: 2px solid rgb(196, 207, 211);
+  transition: all 1s ease-out;
+  animation: fromLeft;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: skyblue;
+  border-radius: 10px;
+  animation: fromTop;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+@keyframes fromTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fixed {
+  font-size: 40px;
+}
+
+.cart-page {
+  background-image: url('./bg-aboutus.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.appt-form {
+  background-image: url('./bg-appointment.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.appt-form h1 {
+  font-size: 40px;
+  font-family: 'Satisfy', cursive;
+  color: #9b8884;
+
+}
+
+
+.confirm-page {
+  background-image: url('./bg-aboutus.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+
+.confirm-container {
+  margin-left: 20rem;
+  margin-top: 2rem ;
+  color: #9b8884;
+}
+
+.confirm-page h2 {
+  font-size: 40px;
+  font-family: 'Satisfy', cursive;
+  color: #9b8884;
+
+  
+}
+.confirm-page input {
+  font-size: 20px;
+}
+
+.contact-page {
+  border-top: 3px dotted #ffdc7c;
+  border-bottom: 3px dotted #ffdc7c;
+}
+.productList-page h2 {
+  font-size: 70px;
+  font-family: 'Satisfy', cursive;
+  font-style: italic;
+  text-shadow: 2px 2px 5px white;
+  color: #9b8884 ;
+}
+.productList-page {
+  background-color: #fff9f5;
+}
+.about-page {
+  background-image: url('./bg-aboutus.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.about-page h1 {
+  font-size: 50px;
+  color: #9b8884;
+  font-family: 'Satisfy', cursive;
+  
+}
+.about-pictures {
+  position: relative;
+}
+.about-image {
+  position: absolute;
+  width: 150px;
+  transition: all 2s ease;
+  opacity: 0.9;
+}
+.img-1 {
+  left: 0%;
+  top: 0%;
+}
+.img-2 {
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+}
+.img-3 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+.img-4 {
+  left: 40%;
+  top: 0%;
+}
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+.about-image:hover {
+  outline: 10px solid #ffdc7c;
+  outline-offset: 0.8rem;
+  transform: scale(1.3) rotate(20deg);
+  z-index: 30;
+  opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover) {
+  opacity: 0.5;
+}
+
+.subheading {
+  color:#9b8884;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  margin-left: 25rem;
+  text-align: center;
+}
+
+
+.Footer-Container {
+  background-image: url(bg-footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  
+}
+
+.Footer-Container h1 {
+  margin-top: 10rem;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 55px;
+  color:#9b8884;
+}
+
+.Footer-Container-h2 {
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 10px;
+  color:#9b8884;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
